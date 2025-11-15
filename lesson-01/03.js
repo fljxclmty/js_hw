@@ -6,13 +6,13 @@
 
 // your code
 let sum = 0;
-let i = 1;
+let count = 1;
 
-while (i <= 20) {
-    if (i % 2 !== 0) {
-        sum += i;
+while (count <= 20) {
+    if (count % 2 !== 0) {
+        sum += count;
     }
-    i++;
+    count++;
 }
 
 
