@@ -19,12 +19,14 @@ function includesElement(array, element) {
     for (let i = 0; i < array.length; i++) {
     const el = array[i];
     if (el==element) {
-        return true
-    } else {return false}
+        
+        return true; 
+        
+     } 
     
     
 }
-
+return false
 }
 
 console.log(includesElement([1, 2, 3], 2));
