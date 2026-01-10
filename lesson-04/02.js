@@ -13,37 +13,37 @@
 `findUniqueElements([1, 2, 3, 2, 1, 4])` вернёт `[1, 2, 3, 4]`.
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
-*/ 
+*/
 
 function includesElement(array, element) {
 
 
     for (let i = 0; i < array.length; i++) {
-    const el = array[i];
-    if (el==element) {
-        
-        return true; 
-        
-     } 
-    
-    
-}
-return false
+        const el = array[i];
+        if (el == element) {
+
+            return true;
+
+        }
+
+
+    }
+    return false
 }
 
 function findUniqueElements(array) {
-    let arr = []; 
+    let arr = [];
     for (let i = 0; i < array.length; i++) {
         const element = array[i];
         if (includesElement(arr, element)) {
             continue
-        } 
+        }
         if (includesElement(array, element)) {
             arr.push(element)
-        } 
-        
-        
-    } 
+        }
+
+
+    }
     return arr
 
 }
